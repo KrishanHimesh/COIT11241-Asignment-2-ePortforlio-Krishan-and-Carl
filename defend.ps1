@@ -36,6 +36,8 @@ function SetupWDAC {
 
 # Function to post-test WDAC
 function PostTest {
+    # Run the keyfinder
+    Start-Process -FilePath "Z:\keyfinder.exe"
     # Check the WInEvent  List log for Intergrity record
     Get-WinEvent (Get-WinEvent -ListLog *Integrity*).logname | Where-Object message -Like "*keyfinder*" | Out-Host
 }
