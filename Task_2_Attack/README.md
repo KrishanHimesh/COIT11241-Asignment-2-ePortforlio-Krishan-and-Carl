@@ -1,0 +1,3 @@
+#README.md
+
+Please download the whole folder in the VM to run. DO NOT TEST IN YOUR LOCAL HOST. THIS SCRIPTS SHOULD ONLY RUN IN A CONTROLLED ENVIRONMENT.
