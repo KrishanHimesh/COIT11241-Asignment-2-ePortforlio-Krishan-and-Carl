@@ -1,9 +1,0 @@
-﻿<Sysmon schemaversion="4.50">
-  <EventFiltering>
-    <!-- Detect file creation -->
-    <RuleGroup name="File Creation" groupRelation="or">
-      <EventID condition="is">11</EventID>
-      <TargetFilename condition="end with">malicious-file.txt</TargetFilename>
-    </RuleGroup>
-  </EventFiltering>
-</Sysmon>
